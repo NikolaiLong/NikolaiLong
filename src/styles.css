@@ -1,0 +1,216 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #09090B;
+  
+  font: 14px;
+  font-family: system-ui, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 32px;
+  max-width: 1280px;
+  margin: auto;
+
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+}
+
+.grid-item {
+  background-color: #121213;
+  text-decoration: none;
+  color: #626262;
+  text-align: left;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  padding: 28px;
+
+  flex-direction: column;
+}
+
+.can-click {
+  background-color: #121213;
+  border: 2px dashed transparent;
+}
+
+.can-click:hover {
+  border-color: #525252;
+}
+
+.sub-item {
+  transition: background-color 0.3s;
+
+  border-radius: 8px;
+
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.non-click {
+}
+
+.non-click-container {
+  background-color: #09090B;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  height: 100%;
+
+  gap: 32px;
+  padding: 0px;
+  max-width: 100%;
+  margin: 0;
+
+}
+
+.item1 {
+  grid-column: span 2;
+  position: relative;
+  gap: 8px;
+}
+
+.item2 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item3 {
+
+}
+
+.item4 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item5 {
+
+}
+
+.item6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+}
+
+.item6-sub {
+  padding: 20px;
+  text-decoration: none;
+}
+
+
+
+.logo {
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  top: 40px;
+  left: -32px;
+}
+
+/*Text*/
+
+.text-box {
+}
+
+.title {
+  color: #efefef;
+  font-size: 20px;
+  font-family:'Space Grotesk';
+}
+
+.item1-title {
+  font-size: 24px;
+  margin-left: 120px;
+  margin-bottom: 0px;
+}
+
+.item1-text {
+  margin-top: 0px;
+  margin-left: 120px;
+}
+
+
+.item7 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px 1rem;
+}
+
+.item7-sub {
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.item7-1 {
+  
+}
+
+.item7-text {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.item7-copyright {
+  grid-column: span 2;
+}
+
+
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo {
+    top: 30px;
+    left: 20px;
+  }
+  .item1-title, .item1-text {
+    margin-left: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .item1 {
+    grid-column: span 1;
+  }
+}
+
+
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
