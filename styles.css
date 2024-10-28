@@ -132,6 +132,10 @@ body {
   left: -32px;
 }
 
+.logo-tile {
+  display: none;
+}
+
 
 
 .item2 {
@@ -228,11 +232,13 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
   .logo {
-    top: 30px;
-    left: 20px;
+    top: 5px;
   }
-  .item1-title, .item1-text {
-    margin-left: 160px;
+  .item1-title {
+    margin-left: 110px;
+  }
+  .item1-text {
+    margin-left: 0px;
   }
 }
 
@@ -243,6 +249,30 @@ body {
   }
   .item1 {
     grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    padding: 0px;
+    gap: 0rem;
+  }
+  .grid-item {
+    padding: 14px;
+  }
+  .logo-tile {
+    display: flex;
+    width: 100%;
+  }
+  .logo {
+    display: none;
+  }
+  .item1-title {
+    margin-left: 0px;
+    margin-top: auto;
+  }
+  .item1-text {
+    margin-left: 0px;
   }
 }
 
