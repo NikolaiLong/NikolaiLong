@@ -1,3 +1,5 @@
+
+/* general page */
 body {
   margin: 0 auto;
   padding: 0;
@@ -15,25 +17,25 @@ body {
   max-width: 1280px;
   margin: auto;
 
-  grid-auto-rows: 1fr;
   align-items: stretch;
 }
 
+
+/* major items */
 .grid-item {
   background-color: #121213;
   text-decoration: none;
-  color: #626262;
+  color: #71717A;
   text-align: left;
   font-size: 14px;
   border-radius: 8px;
   transition: background-color 0.3s;
-  
   display: grid;
-  grid-template-rows: repeat(2, auto);
   gap: 20px;
   padding: 28px;
-
   flex-direction: column;
+
+  align-content: start;
 }
 
 .can-click {
@@ -45,10 +47,13 @@ body {
   border-color: #525252;
 }
 
+
+/* general sub item */
 .sub-item {
   transition: background-color 0.3s;
 
   border-radius: 8px;
+  grid-auto-rows: auto;
 
   padding: 20px;
   margin: 0;
@@ -60,15 +65,12 @@ body {
   width: 100%;
 }
 
-.non-click {
-}
-
-.non-click-container {
+.sub-item-container {
   background-color: #09090B;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, auto);
+  /* grid-template-rows: repeat(1, auto); */
   height: 100%;
 
   gap: 32px;
@@ -78,60 +80,37 @@ body {
 
 }
 
-.item1 {
-  grid-column: span 2;
-  position: relative;
-  gap: 8px;
-}
 
-.item2 {
-  grid-column: span 1;
-  grid-row: span 2;
-}
-
-.item3 {
-
-}
-
-.item4 {
-  grid-column: span 1;
-  grid-row: span 2;
-}
-
-.item5 {
-
-}
-
-.item6 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.5rem;
-}
-
-.item6-sub {
-  padding: 20px;
-  text-decoration: none;
-}
-
-
-
-.logo {
-  position: absolute;
-  width: 150px;
-  height: 80px;
-  top: 40px;
-  left: -32px;
-}
-
-/*Text*/
-
-.text-box {
-}
-
+/* general text */
 .title {
   color: #efefef;
   font-size: 20px;
   font-family:'Space Grotesk';
+}
+
+.text-box a {
+  color: #D4D4D8;
+  text-decoration: none;
+  border-bottom: 1.5px solid #D4D4D8;
+  transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.text-box a:hover {
+  color: #ffffff; /* Change text color on hover */
+  border-bottom-color: #ffffff; /* Change underline color on hover */
+  cursor: pointer;
+}
+
+.bright-text {
+  color: #D4D4D8;
+}
+
+
+/* intro tiles */
+.item1 {
+  grid-column: span 2;
+  position: relative;
+  gap: 8px;
 }
 
 .item1-title {
@@ -145,21 +124,69 @@ body {
   margin-left: 120px;
 }
 
+.logo {
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  top: 40px;
+  left: -32px;
+}
+
+
+
+.item2 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item2-text {
+  font-size: 16px;
+}
+
+.item2-timeline-title {
+  font-size: 12px;
+  margin: 20px 0px 0px 0px;
+}
+
+.item2-list {
+  padding-left: 17px;
+  margin: 0px 0px 0px 0px;
+}
+
+
+/* projects tiles */
+.project {
+
+}
+
+
+/* footer tiles */
+.item6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+}
+
+.item6-sub {
+  padding: 20px;
+  text-decoration: none;
+}
+
 
 .item7 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 16px 1rem;
+  grid-template-rows: repeat(2, auto);
+  position: relative;
+  gap: 32px 1rem;
 }
 
 .item7-sub {
+  display: flex;
+  max-height: 48px;
   padding: 8px 16px;
   text-decoration: none;
-}
-
-.item7-1 {
-  
+  justify-content: flex-start;
 }
 
 .item7-text {
@@ -171,6 +198,30 @@ body {
   grid-column: span 2;
 }
 
+.item7-logo-read {
+  max-width: 100%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.item7-logo-git {
+  max-width: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+/* page size styles */
+@media (min-width: 1024px) {
+  .item6 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .item7 {
+    grid-column: 3;
+    grid-row: 4;
+  }
+}
 
 @media (max-width: 1024px) {
   .grid-container {
@@ -196,7 +247,7 @@ body {
 }
 
 
-
+/* fonts */
 @font-face {
   font-family: 'Space Grotesk';
   font-style: normal;
@@ -205,8 +256,8 @@ body {
   src: url(https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
-@font-face {
+
+@font-face { /* latin */
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 400 700;
