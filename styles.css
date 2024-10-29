@@ -178,7 +178,7 @@ body {
 .project ul li::marker {
   content: "★";
   /* color: gold; */
-  font-size: 1.2em;
+  font-size: 20px;
 }
 
 .project-title-box {
