@@ -289,7 +289,7 @@ button.active .item6-tooltip {
 @media (max-width: 480px) {
   .grid-container {
     padding: 0px;
-    gap: 0rem;
+    gap: 14px;
   }
   .grid-item {
     padding: 14px;
