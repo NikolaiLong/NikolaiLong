@@ -13,3 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 lucide.createIcons();
+
+
+
+function copyText(element) {
+    navigator.clipboard.writeText("nikolai.long.dev@gmail.com").then(() => {
+        element.classList.add("active");
+        setTimeout(() => element.classList.remove("active"), 1000);
+    });
+}

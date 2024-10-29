@@ -41,6 +41,7 @@ body {
 .can-click {
   background-color: #121213;
   border: 2px dashed transparent;
+  cursor: pointer;
 }
 
 .can-click:hover {
@@ -169,11 +170,44 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.5rem;
+  grid-template-rows: 1fr;
 }
 
 .item6-sub {
   padding: 20px;
   text-decoration: none;
+}
+
+.item6-logo {
+  max-width: 100%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.item6-button {
+  position: relative;
+  cursor: pointer;
+}
+
+.item6-tooltip {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+button.active .item6-tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 

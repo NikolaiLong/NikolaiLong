@@ -57,10 +57,18 @@
 
         <!-- footers -->
         <div class="grid-item sub-item-container item6">
-            <div href="https://example.com" class="grid-item can-click sub-item item6-sub">item 6-1</div>
-            <div href="https://example.com" class="grid-item can-click sub-item item6-sub">item 6-2</div>
-            <div href="https://example.com" class="grid-item can-click sub-item item6-sub">item 6-3</div>
+            <a href="https://www.linkedin.com/in/nikolai-long/" class="grid-item can-click sub-item item6-sub">
+                <i class="title item6-logo" data-lucide="linkedin"></i> 
+            </a>
+            <a href="https://www.hackerrank.com/profile/nikolai_long_dev" class="grid-item can-click sub-item item6-sub">
+                <i class="title item6-logo" data-lucide="braces"></i> 
+            </a>
+            <button onclick="copyText(this)" class="grid-item can-click sub-item item6-button">
+                <i class="title item6-logo" data-lucide="mail"></i> 
+                <span class="item6-tooltip">copied email to clipboard</span>
+            </button>
         </div>
+
         <div class="grid-item sub-item-container item7">
             <a href="https://read.cv/nikolailong" class="can-click sub-item item7-sub">
                 <img class="item7-logo-read" src="assets/images/read-cv.svg">
@@ -72,6 +80,7 @@
             </a>
             <div class="item7-copyright">Made by Nikolai Long © All rights reserved.</div>
         </div>
+
     </section>
 
     <script src="script.js"></script>
