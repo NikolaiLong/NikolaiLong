@@ -11,7 +11,7 @@
 #### 3. Finish developing my investment manager
 #### 4. Create an ergonomic and highly functional & integrated platform for note management, life planning & organization, fitness scheduling - i.e. for maintaining productivity without getting overwhelmed (I personally write a lot of things down, and it's hard keeping track of it all) 
 
-#### For more on me checkout my website: https://nikolailong.github.io/NikolaiLong/ (in my NikolaiLong repository)
+#### For more on me checkout my website: https://nikolailong.github.io/NikolaiLong/
 <!--
 **NikolaiLong/NikolaiLong** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

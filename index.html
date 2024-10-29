@@ -48,24 +48,82 @@
         </div>
 
         <!-- project tiles -->
-        <div class="grid-item project">what i'm currently working on: coming soon!</div>
-        <div href="https://example.com" class="grid-item can-click project">chess!</div>
-        <div href="https://example.com" class="grid-item can-click project">orion - iLdar</div>
-        <div href="https://example.com" class="grid-item can-click project">orion - satellite</div>
-        <div href="https://example.com" class="grid-item can-click project">OLVT</div>
-        <div href="https://example.com" class="grid-item can-click project">VT - cubesat</div>
+        <div class="grid-item project project-init">
+            <div class="project-title-box">
+                <i class="title project-logo" data-lucide="soup"></i> 
+                <p class="title project-title project-title-init">Coming Soon!</p>
+            </div>
+            <p class="text-box project-text">
+                What i'm currently working on:
+            </p>
+            <ul>
+                <li><span class="bright-text">Shugo Internal</span> I am creating a data processing website for my friend's starup business.</li>
+                <li><span class="bright-text">ChessAi</span> I've got a lot more work to do on this one 😅</li>
+                <li><span class="bright-text">InvestmentMgr</span> A tool I'm developing to help users make the best possible investing decisions based on their portfolio and the current market.</li>
+                <li><span class="bright-text">ProductivityMgr</span> - A tool I'm developing to integrate note taking with task planning with a UI that is helpful for the user.</li>
+            </ul>
+        </div>
+
+        <a href="https://nikcheerla.github.io/deeplearningschool/2018/01/01/AlphaZero-Explained/" class="grid-item can-click project">
+            <!-- https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/ -->
+            <div class="project-title-box">
+                <i class="title project-logo" data-lucide="server"></i> 
+                <p class="title project-title">ChessAi (on github)</p>
+            </div>
+            <p class="text-box project-text">My long-term personal research project, check out an explanation here:</p>
+            <img class="project-image" src="assets/images/chess.png" alt="logo could not be displayed">
+        </a>
+
+        <a href="https://orion.arcfield.com/press-releases/orion-space-solutions-launches-an-electro-optical%2Finfrared-weather-systems-(ews)-satellite-for-u.s.-department-of-defense-support" class="grid-item can-click project">
+            <div class="project-title-box">
+                <i class="title project-logo" data-lucide="satellite"></i> 
+                <p class="title project-title">RROCI</p>
+            </div>
+            <p class="text-box project-text">Recently launched weather satellite I worked on during my internship at Orion Space Solutions. I developed the optics software for the four cameras on-board.</p>
+            <img class="project-image" src="assets/images/rroci.png" alt="logo could not be displayed">
+        </a>
+
+        <a href="https://www.litewavetech.com/edgelidar" class="grid-item can-click project">
+            <div class="project-title-box">
+                <i class="title project-logo" data-lucide="chart-scatter"></i> 
+                <p class="title project-title">EDGE LiDAR</p>
+            </div>
+            <p class="text-box project-text">One of the products I worked on during my internship at Orion Space Solutions. I developed the machine learning technology used to process the laser point data.</p>
+            <img class="project-image" src="assets/images/mirukuru.png" alt="logo could not be displayed">
+        </a>
+
+        <a href="https://www.businesswire.com/news/home/20191112005969/en/SEDS-Announces-Winner-Astranis-SEDS-SAT-2-Competition" class="grid-item can-click project">
+            <div class="project-title-box">
+                <i class="title project-logo" data-lucide="satellite"></i> 
+                <p class="title project-title">Award Winning ContentCube</p>
+            </div>
+            <p class="text-box project-text">ContentCube was one of the satellite projects I worked on while researching at Space@VT. Won the NASA Astranis SEDS-SAT award in 2020.</p>
+            <img class="project-image" src="assets/images/smallsat.png" alt="logo could not be displayed">
+        </a>
+
+        <a href="https://olvt.org/" class="grid-item can-click project">
+            <div class="project-title-box">
+                <i class="title project-logo" data-lucide="rocket"></i> 
+                <p class="title project-title">OLVT</p>
+            </div>
+            <p class="text-box project-text">Orbital Launch Vehicle Team is the research team I gave several years to at Virginia Tech. I was a member of the trajectory and analysis team.</p>
+            <img class="project-image" src="assets/images/olvt.png" alt="logo could not be displayed">
+        </a>
 
         <!-- footers -->
         <div class="grid-item sub-item-container item6">
             <a href="https://www.linkedin.com/in/nikolai-long/" class="grid-item can-click sub-item item6-sub">
                 <i class="title item6-logo" data-lucide="linkedin"></i> 
+                <span class="item6-tooltip">linkedin</span>
             </a>
             <a href="https://www.hackerrank.com/profile/nikolai_long_dev" class="grid-item can-click sub-item item6-sub">
                 <i class="title item6-logo" data-lucide="braces"></i> 
+                <span class="item6-tooltip">hackerrank</span>
             </a>
             <button onclick="copyText(this)" class="grid-item can-click sub-item item6-button">
                 <i class="title item6-logo" data-lucide="mail"></i> 
-                <span class="item6-tooltip">copied email to clipboard</span>
+                <span class="item6-tooltip">copy email</span>
+                <span class="item6-message">copied email to clipboard</span>
             </button>
         </div>
 

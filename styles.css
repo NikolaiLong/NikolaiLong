@@ -161,7 +161,57 @@ body {
 
 /* projects tiles */
 .project {
+  gap: 0px;
+}
 
+.project ul {
+  list-style: none;
+  margin: -10px 0px 10px 0px;
+  padding-left: 20px;
+}
+
+.project ul li {
+  padding-left: 10px;
+  /* text-indent: -17px; */
+}
+
+.project ul li::marker {
+  content: "★";
+  /* color: gold; */
+  font-size: 1.2em;
+}
+
+.project-title-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.project-title {
+  margin: 0px 0px 1px 0px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.project-title-init {
+  text-decoration: none;
+}
+
+.project-logo {
+  margin: 1px 0px 0px 0px;
+}
+
+.project-text {
+  margin: 10px 0px 20px 0px;
+}
+
+.project-image {
+  /* height: 100px; */
+  width: 100%;
+}
+
+.project-init {
+  grid-template-rows: repeat(3, auto);
 }
 
 
@@ -169,13 +219,35 @@ body {
 .item6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.5rem;
+  column-gap: 2rem;
   grid-template-rows: 1fr;
 }
 
 .item6-sub {
   padding: 20px;
   text-decoration: none;
+  position: relative;
+}
+
+.item6-sub:hover .item6-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.item6-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 12px;
+  transition: opacity 0.3s;
 }
 
 .item6-logo {
@@ -188,8 +260,12 @@ body {
   position: relative;
   cursor: pointer;
 }
+.item6-button:hover .item6-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 
-.item6-tooltip {
+.item6-message {
   visibility: hidden;
   background-color: #333;
   color: #fff;
@@ -205,7 +281,7 @@ body {
   transition: opacity 0.3s;
 }
 
-button.active .item6-tooltip {
+button.active .item6-message {
   visibility: visible;
   opacity: 1;
 }
@@ -288,7 +364,7 @@ button.active .item6-tooltip {
 
 @media (max-width: 480px) {
   .grid-container {
-    padding: 0px;
+    padding: 14px 0px 0px 0px;
     gap: 14px;
   }
   .grid-item {
