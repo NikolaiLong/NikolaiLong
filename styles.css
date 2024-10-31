@@ -45,6 +45,7 @@ body.changed-background {
 
 .grid-item.changed-background {
   background-color: #89E219;
+  color: #4B4B4B;
 }
 
 .can-click {
@@ -107,6 +108,9 @@ body.changed-background {
   font-size: 20px;
   font-family:'Space Grotesk';
 }
+.title.changed-background {
+  color: #ffffff;
+}
 
 .text-box a {
   color: #D4D4D8;
@@ -114,15 +118,22 @@ body.changed-background {
   border-bottom: 1.5px solid #D4D4D8;
   transition: color 0.3s, border-bottom-color 0.3s;
 }
+.text-box a.changed-background {
+  color: #ffffff;
+  border-bottom: 1.5px solid #ffffff;
+}
 
 .text-box a:hover {
-  color: #ffffff; /* Change text color on hover */
+  color: #ffffff;
   border-bottom-color: #ffffff; /* Change underline color on hover */
   cursor: pointer;
 }
 
 .bright-text {
   color: #D4D4D8;
+}
+.bright-text.changed-background {
+  color: #ffffff;
 }
 
 
@@ -155,6 +166,27 @@ body.changed-background {
 
 .logo-tile {
   display: none;
+}
+
+.button-box {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.easter-egg-button {
+  border: none;
+  border-radius: 8px;
+
+  background-color: #121213;
+  color: #D4D4D8;
+}
+.easter-egg-button.changed-background {
+  background-color: #d29d9a;
+  color: #ffffff;
 }
 
 
@@ -337,6 +369,7 @@ button.active .item6-message {
   max-width: 100%;
   width: 2rem;
   height: 2rem;
+  color: #ffffff;
 }
 
 .item7-logo-git {
@@ -361,8 +394,7 @@ button.active .item6-message {
 
 .confetti {
   position: absolute;
-  /* top: 50%; */
-  width: 60px;
+  width: 32px;
   height: 32px;
   animation: confetti-fall 5s forwards ease-in-out;
 }
