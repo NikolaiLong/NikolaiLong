@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         for (let i = 0; i < numberOfConfetti; i++) {
             const confetti = document.createElement('img');
-            confetti.src = 'assets/images/duo_ball_cut.PNG';
+            confetti.src = 'assets/images/duo_ball_cut.png';
             confetti.classList.add('confetti');
         
             // Random initial positions
