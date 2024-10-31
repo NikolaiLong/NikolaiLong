@@ -180,6 +180,8 @@ body.changed-background {
 .easter-egg-button {
   border: none;
   border-radius: 8px;
+  font: 14px;
+  font-family:'Space Grotesk';
 
   background-color: #121213;
   color: #D4D4D8;
