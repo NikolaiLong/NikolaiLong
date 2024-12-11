@@ -178,17 +178,35 @@ body.changed-background {
 }
 
 .easter-egg-button {
-  border: none;
+  border: 2px solid;
+  border-color: #525252;
   border-radius: 8px;
   font: 14px;
   font-family:'Space Grotesk';
 
   background-color: #121213;
   color: #D4D4D8;
+  
+  cursor: pointer;
+}
+.easter-egg-button:hover {
+  background-color: #525252;
+}
+.easter-egg-button:active {
+  background-color: #121213;
 }
 .easter-egg-button.changed-background {
   background-color: #d29d9a;
+  border-color: #d29d9a;
   color: #ffffff;
+}
+.easter-egg-button.changed-background:hover {
+  background-color: #525252;
+  border-color: #525252;
+}
+.easter-egg-button.changed-background:active {
+  background-color: #d29d9a;
+  border-color: #d29d9a;
 }
 
 
@@ -211,6 +229,98 @@ body.changed-background {
   margin: 0px 0px 0px 0px;
 }
 
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-container .caption-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 10px;
+  border-radius: 3px;
+}
+
+.image-container .caption-2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 10px;
+  border-radius: 3px;
+}
+
+.image-container:hover .nasa-tooltip-container,
+.image-container:hover .image-button {
+  visibility: visible;
+  opacity: 1;
+}
+
+.image-button {
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+
+  display: inline-flex;
+  position:absolute;
+  top: 50%;
+
+  align-items: center;
+}
+
+.image-button:hover {
+  background-color: #333;
+  
+  cursor: pointer;
+}
+
+.image-button-left {
+  left: 1%;
+  transform: translateY(-50%);
+}
+.image-button-left svg {
+  transform: translateX(-1px);
+}
+.image-button-right {
+  right: 1%;
+  transform: translateY(-50%);
+}
+.image-button-right svg {
+  transform: translateX(1px);
+}
+
+.nasa-tooltip-container {
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: normal; 
+  font-size: 12px;
+  transition: opacity 0.3s;
+}
 
 
 /* projects tiles */
@@ -260,7 +370,6 @@ body.changed-background {
 }
 
 .project-image {
-  /* height: 100px; */
   width: 100%;
 }
 

@@ -287,3 +287,97 @@ function rain() {
         confettiContainer.remove();
     }, 5000);
 }
+
+
+const rssFeedUrl = "https://www.nasa.gov/feeds/iotd-feed/";
+let slides = [];   // Will hold the parsed slide data
+let currentIndex = 0;
+let intervalTime = 45000; // 5 seconds per image, adjust as needed
+let slideshowInterval;
+
+async function fetchRSSFeed() {
+    try {
+        const response = await fetch(rssFeedUrl);
+        if (!response.ok) throw new Error("Failed to fetch RSS feed");
+
+        const rssText = await response.text();
+        const parser = new DOMParser();
+        const rssDoc = parser.parseFromString(rssText, "application/xml");
+
+        // Extract all items
+        const items = rssDoc.querySelectorAll("item");
+        items.forEach(item => {
+            const title = item.querySelector("title")?.textContent || "No Title";
+            const pubDate = item.querySelector("pubDate")?.textContent || "No Date"
+            const description = item.querySelector("description")?.textContent || "No Description";
+            const enclosure = item.querySelector("enclosure");
+            const imageUrl = enclosure ? enclosure.getAttribute("url") : null;
+
+            if (imageUrl) {
+                slides.push({
+                    title: title,
+                    description: description,
+                    pubDate : pubDate,
+                    imageUrl: imageUrl
+                });
+            }
+        });
+
+        // Start the slideshow if we have slides
+        if (slides.length > 0) {
+            showSlide(currentIndex);
+            slideshowInterval = setInterval(nextSlideRight, intervalTime);
+            startSlideshow();
+        } else {
+            console.warn("No images found in the RSS feed.");
+        }
+
+    } catch (error) {
+        console.error("Error fetching or parsing RSS feed:", error);
+    }
+}
+
+function showSlide(index) {
+    const slide = slides[index];
+    document.getElementById("image-of-the-day").src = slide.imageUrl;
+    document.getElementById("nasa-title").textContent = slide.title;
+    document.getElementById("nasa-tooltip-date").textContent = slide.pubDate;
+    document.getElementById("nasa-tooltip").textContent = slide.description;
+}
+
+function nextSlideRight() {
+    currentIndex = Math.abs(currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+}
+
+function nextSlideLeft() {
+    if (currentIndex == 0) {
+        currentIndex = slides.length
+    }
+    currentIndex = Math.abs(currentIndex - 1) % slides.length;
+    showSlide(currentIndex);
+}
+
+function startSlideshow() {
+    slideshowInterval = setInterval(nextSlideRight, intervalTime);
+}
+
+function stopSlideshow() {
+    clearInterval(slideshowInterval);
+}
+
+
+// Run the function to fetch and display the RSS feed data
+fetchRSSFeed();
+
+
+// Pause on hover
+const slideshowContainer = document.getElementById("image-container");
+
+slideshowContainer.addEventListener("mouseenter", () => {
+    stopSlideshow();
+});
+
+slideshowContainer.addEventListener("mouseleave", () => {
+    startSlideshow();
+});

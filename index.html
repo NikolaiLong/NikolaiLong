@@ -38,6 +38,21 @@
         </div>
 
         <div class="grid-item item2">
+            <div class="image-container" id="image-container">
+                <div class="caption-1">NASA Images of the Day</div>
+                <img class="project-image" id="image-of-the-day" alt="Image could not be displayed">
+                <button class="image-button image-button-left" onclick="nextSlideLeft()">
+                    <svg class="title project-logo" data-lucide="chevron-left"></svg>
+                </button>
+                <button class="image-button image-button-right" onclick="nextSlideRight()">
+                    <svg class="title project-logo" data-lucide="chevron-right"></svg> 
+                </button>
+                <div class="caption-2" id="nasa-title"></div>
+                <span class="nasa-tooltip-container">
+                    <span class="nasa-tooltip-date" id="nasa-tooltip-date"></span><br>
+                    <span class="nasa-tooltip" id="nasa-tooltip"></span>
+                </span>
+            </div>
             <div class="text-box item2-text">
                 Focused on backend API development for the past two years in my current role. Formerly an aerospace engineer researching 
                 satellite code at VT and during my internship, and more recently a software researcher at VT, also working on independent projects.
@@ -105,7 +120,7 @@
                 <i class="title project-logo" data-lucide="satellite"></i> 
                 <p class="title project-title">Award Winning ContentCube</p>
             </div>
-            <p class="text-box project-text">ContentCube was one of the satellite projects I worked on while researching at Space@VT. Won the NASA Astranis SEDS-SAT award in 2020.</p>
+            <p class="text-box project-text">ContentCube was one of the satellite projects I worked on while researching at Space@VT. It won the NASA Astranis SEDS-SAT award in 2020.</p>
             <img class="project-image" src="assets/images/smallsat.PNG" alt="logo could not be displayed">
         </a>
 
