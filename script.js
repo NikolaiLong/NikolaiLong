@@ -289,15 +289,15 @@ function rain() {
 }
 
 
-const rssFeedUrl = "https://www.nasa.gov/feeds/iotd-feed/";
+const nasaImagesXML = "assets/feeds/nasa-images.xml";
 let slides = [];   // Will hold the parsed slide data
 let currentIndex = 0;
-let intervalTime = 45000; // 5 seconds per image, adjust as needed
+let intervalTime = 15000;
 let slideshowInterval;
 
 async function fetchRSSFeed() {
     try {
-        const response = await fetch(rssFeedUrl);
+        const response = await fetch(nasaImagesXML);
         if (!response.ok) throw new Error("Failed to fetch RSS feed");
 
         const rssText = await response.text();
@@ -326,7 +326,6 @@ async function fetchRSSFeed() {
         // Start the slideshow if we have slides
         if (slides.length > 0) {
             showSlide(currentIndex);
-            slideshowInterval = setInterval(nextSlideRight, intervalTime);
             startSlideshow();
         } else {
             console.warn("No images found in the RSS feed.");
@@ -374,10 +373,10 @@ fetchRSSFeed();
 // Pause on hover
 const slideshowContainer = document.getElementById("image-container");
 
-slideshowContainer.addEventListener("mouseenter", () => {
+slideshowContainer.addEventListener("mouseover", () => {
     stopSlideshow();
 });
 
-slideshowContainer.addEventListener("mouseleave", () => {
+slideshowContainer.addEventListener("mouseout", () => {
     startSlideshow();
 });

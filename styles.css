@@ -232,12 +232,16 @@ body.changed-background {
 .image-container {
   position: relative;
   display: inline-block;
+  height: 50v;
+  aspect-ratio: 16/9;
 }
 
 .image-container img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; 
+  object-position: 50% 50%; 
 }
 
 .image-container .caption-1 {
@@ -286,7 +290,6 @@ body.changed-background {
 
 .image-button:hover {
   background-color: #333;
-  
   cursor: pointer;
 }
 
