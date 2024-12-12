@@ -1,5 +1,13 @@
 
 /* general page */
+html {
+  scrollbar-width: none; /* For Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -7,6 +15,10 @@ body {
   
   font: 14px;
   font-family: system-ui, sans-serif;
+
+  /* Removes scrollbars */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  scrollbar-width: none;     /* For Firefox */
 }
 
 body.changed-background {
@@ -139,6 +151,10 @@ body.changed-background {
 
 
 /* intro tiles */
+.logo-click {
+  cursor: pointer;
+}
+
 .item1 {
   grid-column: span 2;
   position: relative;
