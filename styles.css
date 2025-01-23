@@ -229,6 +229,7 @@ body.changed-background {
 .item2 {
   grid-column: span 1;
   grid-row: span 2;
+  padding-bottom: 30px;
 }
 
 .item2-text {
