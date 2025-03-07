@@ -1,4 +1,4 @@
-# Hi there welcome to my GitHub!
+## Currently working on: https://github.com/quantumlib/Cirq/issues/4685
 
 #### My name's Nikolai and I love coding, I have so many ideas of things to create but not enough time to work on them 😄
 #### Right now I'm finishing up my personal website - I have several more features I want to add to it before it's done for the time being.
