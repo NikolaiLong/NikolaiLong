@@ -1,5 +1,7 @@
+## My portfolio: https://nikolailong.github.io/NikolaiLong/
 ## Currently working on: https://github.com/quantumlib/Cirq/issues/4685
-## Check out my website for more on me: https://nikolailong.github.io/NikolaiLong/
+## Open Source Issue Log:
+### 3/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/4685
 <!--
 **NikolaiLong/NikolaiLong** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
