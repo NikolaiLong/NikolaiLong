@@ -1,6 +1,8 @@
 ## My portfolio: https://nikolailong.github.io/NikolaiLong/
-## Currently working on: https://github.com/quantumlib/Cirq/issues/4685
+## Currently working on: https://github.com/quantumlib/Cirq/issues/5689
 ## Open Source Issue Log:
+### 3/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/3597
+### 3/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/5689
 ### 3/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/4685
 <!--
 Cirq Milestone: 2025 Improve capabilities for cirquit visualization (https://github.com/quantumlib/Cirq/milestone/12)
