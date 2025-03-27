@@ -1,6 +1,7 @@
 # Driven By Purpose: 
-## My life mission is to provide financial support and security to people in need. I believe that everyone deserves access to financial stability, regardless of their background or circumstances. Financial stability is not a privilege—it’s a basic human right. In a world where opportunity is often tied to economic standing, I’m committed to building systems that empower and uplift those who are most vulnerable.
-## I'm especially passionate about the potential of emerging technologies—Blockchain, Web3, Quantum Computing, AI, and ML—to revolutionize the Fintech space. When thoughtfully integrated, these innovations can pave the way for a more inclusive financial ecosystem and help bring my mission of total financial security to life.
+> My life mission is to provide financial support and security to people in need. I believe that everyone deserves access to financial stability, regardless of their background or circumstances. Financial stability is not a privilege—it’s a __basic human right__. In a world where opportunity is often tied to economic standing, I’m committed to building systems that empower and uplift those who are most vulnerable.
+> 
+> I'm especially passionate about the potential of emerging technologies—Blockchain, Web3, Quantum Computing, AI, and ML—to revolutionize the Fintech space. When thoughtfully integrated, these innovations can pave the way for a more inclusive financial ecosystem and help bring my mission of total financial security to life.
 ## My portfolio: https://nikolailong.github.io/NikolaiLong/
 ## Currently working on: https://github.com/quantumlib/Cirq/issues/3597
 ## Open Source Issue Log:
