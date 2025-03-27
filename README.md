@@ -4,7 +4,7 @@
 ### 4/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/3597
 ### 3/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/5689
 ### 3/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/4685
-### 1-2/25 - [Cirq](https://github.com/quantumlib/Cirq/): reviwing framework and codebase
+### 1-2/25 - [Cirq](https://github.com/quantumlib/Cirq/): reviwed framework and codebase
 <!--
 Cirq Milestone: 2025 Improve capabilities for cirquit visualization (https://github.com/quantumlib/Cirq/milestone/12)
 On Deck:
