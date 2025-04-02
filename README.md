@@ -3,11 +3,12 @@
 > 
 > I'm especially passionate about the potential of emerging technologies—Blockchain, Web3, Quantum Computing, AI, and ML—along side open source collaboration to revolutionize the Fintech space. When thoughtfully integrated, these innovations can pave the way for a more inclusive financial ecosystem and help bring my mission of total financial security to life.
 ## My portfolio: https://nikolailong.github.io/NikolaiLong/
-## Currently working on: https://github.com/quantumlib/Cirq/issues/3597
+## Currently working on: https://github.com/quantumlib/Cirq/issues/5689
 ## Open Source Issue Log:
+### 4/25 - [tesserac-decoder](https://github.com/quantumlib/tesseract-decoder): reviewing codebase
 ### 4/25 - [tensorflow](https://github.com/tensorflow/tensorflow): reviwing framework and codebase, researching ai and ml
-### 3/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/5689 - awaiting criteria clarification
-### 4/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/3597 - in progress
+### 4/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/3597 - on hold
+### 3/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/5689 - in progress
 ### 3/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/4685 - awaiting PR review
 ### 2-4/25 - [anchor](https://github.com/coral-xyz/anchor): reviewing framework and codebase, researching web3 and blockchain
 ### 1-2/25 - [Cirq](https://github.com/quantumlib/Cirq/): reviwed framework and codebase
