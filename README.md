@@ -5,10 +5,10 @@
 ## My portfolio: https://nikolailong.github.io/NikolaiLong/
 ## Currently working on: https://github.com/quantumlib/Cirq/issues/5689
 ## Open Source Issue Log:
+### 5/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/3597 - on hold
 ### 4/25 - [tesserac-decoder](https://github.com/quantumlib/tesseract-decoder): reviewing codebase
 ### 4/25 - [tensorflow](https://github.com/tensorflow/tensorflow): reviwing framework and codebase, researching ai and ml
-### 4/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/3597 - on hold
-### 3/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/5689 - in progress
+### 4/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/5689 - in progress
 ### 3/25 - [Cirq](https://github.com/quantumlib/Cirq/): https://github.com/quantumlib/Cirq/issues/4685 - awaiting PR review
 ### 2-4/25 - [anchor](https://github.com/coral-xyz/anchor): reviewing framework and codebase, researching web3 and blockchain
 ### 1-2/25 - [Cirq](https://github.com/quantumlib/Cirq/): reviwed framework and codebase
